@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Ingeniería Civil Industrial - UBB</title>
+  <style>
+    body {
+      background-color: #ffeef5;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 30px;
+    }
 
+    h1 {
+      text-align: center;
+      color: #d63384;
+      margin-bottom: 40px;
+    }
+
+    .semestre {
+      margin-bottom: 35px;
+    }
+
+    .semestre h2 {
+      color: #d63384;
+      background-color: #ffd6e8;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .malla {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .ramo {
+      background-color: #ffd6e8;
+      border: 2px solid #f3a6c6;
+      padding: 12px;
+      text-align: center;
+      border-radius: 8px;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.3s;
+    }
+
+    .ramo:hover {
+      background-color: #ffc1da;
+    }
+
+    .tachado {
+      text-decoration: line-through;
+      background-color: #e0e0e0;
+      color: gray;
+      border-color: gray;
+    }
+  </style>
+</head>
+<body>
+  <h1>Malla Ingeniería Civil Industrial - UBB</h1>
+
+  <!-- I al X semestre -->
+  <div class="semestre"><h2>I Semestre</h2><div class="malla">
+    <div class="ramo">Álgebra y Trigonometría</div>
+    <div class="ramo">Cálculo Diferencial</div>
+    <div class="ramo">Física Mecánica</div>
+    <div class="ramo">Química General</div>
+    <div class="ramo">Introducción a la Ingeniería Industrial</div>
+  </div></div>
+
+  <div class="semestre"><h2>II Semestre</h2><div class="malla">
+    <div class="ramo">Álgebra Lineal</div>
+    <div class="ramo">Cálculo Integral</div>
+    <div class="ramo">Electromagnetismo</div>
+    <div class="ramo">Contabilidad y Costos</div>
+    <div class="ramo">Algoritmos y Programación</div>
+  </div></div>
+
+  <div class="semestre"><h2>III Semestre</h2><div class="malla">
+    <div class="ramo">Estadística</div>
+    <div class="ramo">Software para Ingeniería Industrial</div>
+    <div class="ramo">Ecuaciones Diferenciales</div>
+    <div class="ramo">Optimización Lineal</div>
+    <div class="ramo">Formación Integral Institucional</div>
+  </div></div>
+
+  <div class="semestre"><h2>IV Semestre</h2><div class="malla">
+    <div class="ramo">Modelamiento de Sistemas Informáticos</div>
+    <div class="ramo">Cálculo Multivariable</div>
+    <div class="ramo">Mecánica de Sólidos y Fluidos</div>
+    <div class="ramo">Teoría de Sistemas</div>
+    <div class="ramo">Microeconomía</div>
+  </div></div>
+
+  <div class="semestre"><h2>V Semestre</h2><div class="malla">
+    <div class="ramo">Inferencia Estadística</div>
+    <div class="ramo">Métodos de Producción</div>
+    <div class="ramo">Gestión Estratégica</div>
+    <div class="ramo">Taller de Ciencias de la Ingeniería</div>
+    <div class="ramo">Electrotecnia</div>
+  </div></div>
+
+  <div class="semestre"><h2>VI Semestre</h2><div class="malla">
+    <div class="ramo">Termodinámica</div>
+    <div class="ramo">Comportamiento Organizacional</div>
+    <div class="ramo">Finanzas</div>
+    <div class="ramo">Evaluación de Proyectos</div>
+    <div class="ramo">Gestión de Servicios</div>
+  </div></div>
+
+  <div class="semestre"><h2>VII Semestre</h2><div class="malla">
+    <div class="ramo">Gestión de la Innovación</div>
+    <div class="ramo">Marketing</div>
+    <div class="ramo">Optimización No Lineal</div>
+    <div class="ramo">Taller de Sistemas Productivos</div>
+    <div class="ramo">Práctica Profesional I</div>
+  </div></div>
+
+  <div class="semestre"><h2>VIII Semestre</h2><div class="malla">
+    <div class="ramo">Logística Integral</div>
+    <div class="ramo">Simulación de Procesos</div>
+    <div class="ramo">Formulación y Preparación de Proyectos</div>
+    <div class="ramo">Electivo Profesional I</div>
+    <div class="ramo">Electivo Profesional II</div>
+  </div></div>
+
+  <div class="semestre"><h2>IX Semestre</h2><div class="malla">
+    <div class="ramo">Electivo Profesional III</div>
+    <div class="ramo">Electivo Profesional IV</div>
+    <div class="ramo">Electivo Profesional V</div>
+    <div class="ramo">Taller de Proyecto de Emprendimiento</div>
+    <div class="ramo">Práctica Profesional II</div>
+  </div></div>
+
+  <div class="semestre"><h2>X Semestre</h2><div class="malla">
+    <div class="ramo">Seminario de Titulación</div>
+    <div class="ramo">Inclusión al Ambiente Laboral</div>
+  </div></div>
+
+  <script>
+    document.querySelectorAll('.ramo').forEach(el => {
+      el.addEventListener('click', () => {
+        el.classList.toggle('tachado');
+      });
+    });
+  </script>
+</body>
+</html>
+</script>
+
+  <div style="text-align:center; margin-top: 60px; font-size: 20px; color: #d63384; font-weight: bold;">
+    Puedes con todo y más, Te amo 💖
+  </div>
+</body>
+</html>
